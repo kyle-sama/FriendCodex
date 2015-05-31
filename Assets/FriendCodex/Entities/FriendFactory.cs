@@ -5,13 +5,12 @@ namespace AssemblyCSharp.Entities
 {
 	public class FriendFactory
 	{
-		Random random;
-		Friend friend;
+		private static Random random= new Random();
+		private Friend friend;
 
 		public FriendFactory(Friend friend)
 		{
 			this.friend = friend;
-			random = new Random ();
 			InitStats ();
 		}
 

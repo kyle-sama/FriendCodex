@@ -21,12 +21,13 @@ namespace AssemblyCSharp.Entities
         double SpecialDefence { get; set; }
         double Athletics { get; set; }
         double Intelligence { get; set; }
-        double Popularity { get; set; }
+        double Popularity { get; set; } //Increases with each new trainer encountered
         double Attractiveness { get; set; }
 
 
 		public StatInfo ()
 		{
+
 		}
 
 	
