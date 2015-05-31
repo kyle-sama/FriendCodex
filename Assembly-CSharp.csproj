@@ -39,15 +39,17 @@
 	<Reference Include="System.Core" />
 	<Reference Include="System.Xml.Linq" />
 	<Reference Include="UnityEngine">
-	  <HintPath>K:/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
 	</Reference>
 	<Reference Include="UnityEditor">
-	  <HintPath>K:/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
 	</Reference>
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\FriendCodex\Entities\ContactInfo.cs" />
      <Compile Include="Assets\FriendCodex\Entities\Friend.cs" />
+     <Compile Include="Assets\FriendCodex\Entities\FriendFactory.cs" />
+     <Compile Include="Assets\FriendCodex\Entities\FriendType.cs" />
      <Compile Include="Assets\FriendCodex\Entities\Player.cs" />
      <Compile Include="Assets\FriendCodex\Entities\Skill.cs" />
      <Compile Include="Assets\FriendCodex\Entities\StatInfo.cs" />
@@ -58,13 +60,10 @@
      <None Include="Assets\Plugins\Android\NativeToolkit\AndroidManifest.xml" />
      <None Include="Assets\Plugins\Android\NativeToolkit\bin\R.txt" />
  <Reference Include="UnityEngine.UI">
- <HintPath>K:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
- </Reference>
- <Reference Include="NativeToolkitWP8">
- <HintPath>E:/Users/Kyle/Documents/UnityProjects/FriendCodex/Assets/Plugins/NativeToolkitWP8.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
- <HintPath>K:/Unity/Editor/Data/PlaybackEngines/iossupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iossupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
