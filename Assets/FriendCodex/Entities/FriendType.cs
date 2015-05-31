@@ -56,8 +56,6 @@ namespace AssemblyCSharp
 				case TypeName.TRENDY:
 					break;
 
-
-
 			}
 			//Formula to determine modifier
 			return 0;
