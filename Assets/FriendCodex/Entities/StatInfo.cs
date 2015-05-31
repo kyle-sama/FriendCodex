@@ -24,9 +24,15 @@ namespace AssemblyCSharp.Entities
         double Popularity { get; set; }
         double Attractiveness { get; set; }
 
+
 		public StatInfo ()
 		{
 		}
+
+	
+
+
+
 	}
 }
 

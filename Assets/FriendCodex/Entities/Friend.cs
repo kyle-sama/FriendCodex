@@ -13,7 +13,6 @@ using System.Collections.Generic;
 namespace AssemblyCSharp.Entities
 {
     public enum Gender { BOY, GIRL}
-    public enum FriendType { }
 	public class Friend
 	{
         public Guid UniqueId { get; set; }
