@@ -33,7 +33,11 @@ namespace AssemblyCSharp.Entities
 
         public double Experience { get; set; }
 
-		public Friend ()
+
+		private FriendType friendType;
+
+
+		public Friend (FriendType friendType)
 		{
             UniqueId = Guid.NewGuid();
 		}

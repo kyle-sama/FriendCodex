@@ -1,0 +1,125 @@
+
+{
+	"Types":[
+	{
+		"type":"MOODY",
+		"strong_against":[
+			"friendly"
+			],
+
+		"weak_against":[
+			"happy"
+			]
+	},
+
+	{
+		"type":"HAPPY",
+		"strong_against":[
+			"other"
+			],
+
+		"weak_against":[
+			"f"
+			]
+	
+	},
+
+	{
+		"type":"DRAMATIC",
+		"strong_against":[
+			"other"
+			],
+
+		"weak_against":[
+			"f"
+			]
+	
+	},
+
+	{
+		"type":"EASYGOING",
+		"strong_against":[
+			"other"
+			],
+
+		"weak_against":[
+			"f"
+			]
+	
+	},
+
+	{
+		"type":"SPUNKY",
+		"strong_against":[
+			"other"
+			],
+
+		"weak_against":[
+			"f"
+			]
+	
+	},
+
+	{
+		"type":"SLEEPY",
+		"strong_against":[
+			"other"
+			],
+
+		"weak_against":[
+			"f"
+			]
+	
+	},
+
+	{
+		"type":"GRUMPY",
+		"strong_against":[
+			"other"
+			],
+
+		"weak_against":[
+			"f"
+			]
+	
+	},
+
+	{
+		"type":"FRIENDLY",
+		"strong_against":[
+			"other"
+			],
+
+		"weak_against":[
+			"f"
+			]
+	
+	},
+
+	{
+		"type":"FUNNY",
+		"strong_against":[
+			"other"
+			],
+
+		"weak_against":[
+			"f"
+			]
+	
+	},
+
+	{
+		"type":"SERIOUS",
+		"strong_against":[
+			"other"
+			],
+
+		"weak_against":[
+			"f"
+			]
+	
+	}
+
+	]
+
+}

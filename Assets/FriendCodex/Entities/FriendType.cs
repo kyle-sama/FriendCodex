@@ -9,23 +9,39 @@
 //------------------------------------------------------------------------------
 using System;
 using System.Collections.Generic;
-namespace AssemblyCSharp
+namespace AssemblyCSharp.Entities
 {
-	public enum TypeName {MOODY,HAPPY, DRAMATIC, EASYGOING, SPUNKY, SLEEPY, GRUMPY, TRENDY, FUNNY, SERIOUS };
+	public enum TypeName {MOODY,HAPPY, DRAMATIC, EASYGOING, SPUNKY, SLEEPY, GRUMPY, TRENDY, FUNNY, SERIOUS,FRIENDLY };
 
 	public class FriendType
 	{
-		private List<FriendType> StrongAgainst{ get; set; }
-		private List<FriendType> WeakAgainst{ get; set;}
-		private TypeName typeName;
-		private int Modifier{ get; set; }
+		public List<TypeName> StrongAgainst{ get; set; }
+		public List<TypeName> WeakAgainst{ get; set;}
+		public TypeName TypeName{ get; set; }
+		public int Modifier{ get; set; }
+
+		//Base stats
+		public double BaseHP{ get; set; }
+		public double BaseAttack{ get; set; }
+		public double BaseDefense{ get; set; }
+		public double BaseSpecialAttack{ get; set; }
+		public double BaseSpecialDefense{ get; set; }
+
+		public Friend newFriend()
+		{
+			return new Friend (this);
+		}
 
 		public FriendType (TypeName typeName, List<FriendType> strongAgainst, List<FriendType> weakAgainst)
 		{
-			this.typeName = typeName;
-			this.StrongAgainst = strongAgainst;
-			this.WeakAgainst = weakAgainst;
+			this.TypeName = typeName;
+			this.StrongAgainst = new List<TypeName>();
+			this.WeakAgainst = new List<TypeName>();
 			Modifier = setModfier();
+		}
+
+		public FriendType()
+		{
 		}
 
 		public int setModfier()
@@ -33,7 +49,7 @@ namespace AssemblyCSharp
 			/*TO DO
 			 * come up with formula thats type dependent
 			*/
-			switch(typeName)
+			switch(TypeName)
 			{
 				case TypeName.DRAMATIC:
 					break;
@@ -55,17 +71,18 @@ namespace AssemblyCSharp
 					break;
 				case TypeName.TRENDY:
 					break;
-
 			}
 			//Formula to determine modifier
 			return 0;
 		}
+
+
 		//Instatiate each type 
 
 		/*TO DO
 			*initilaize the strong and weak against lists
 		*/
-		public static FriendType Moody= new FriendType(TypeName.MOODY, new List<FriendType>{},new List<FriendType> {});
+		//public static FriendType Moody= new FriendType(TypeName.MOODY, new List<FriendType>{},new List<FriendType> {});
 
 		
 	}
